@@ -34,7 +34,7 @@ import org.nasdanika.models.party.impl.PartyImpl;
  *
  * @generated
  */
-public abstract class SchoolImpl extends PartyImpl implements School {
+public class SchoolImpl extends PartyImpl implements School {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

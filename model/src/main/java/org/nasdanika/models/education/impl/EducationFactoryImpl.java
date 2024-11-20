@@ -56,9 +56,21 @@ public class EducationFactoryImpl extends EFactoryImpl implements EducationFacto
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
+			case EducationPackage.SCHOOL: return createSchool();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public School createSchool() {
+		SchoolImpl school = new SchoolImpl();
+		return school;
 	}
 
 	/**

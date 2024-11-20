@@ -22,6 +22,15 @@ public interface EducationFactory extends EFactory {
 	EducationFactory eINSTANCE = org.nasdanika.models.education.impl.EducationFactoryImpl.init();
 
 	/**
+	 * Returns a new object of class '<em>School</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>School</em>'.
+	 * @generated
+	 */
+	School createSchool();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

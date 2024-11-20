@@ -21,7 +21,7 @@ import org.nasdanika.models.party.Person;
  * </ul>
  *
  * @see org.nasdanika.models.education.EducationPackage#getSchool()
- * @model abstract="true"
+ * @model
  * @generated
  */
 public interface School extends Party {

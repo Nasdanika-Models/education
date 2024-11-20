@@ -192,7 +192,7 @@ public class EducationPackageImpl extends EPackageImpl implements EducationPacka
 		schoolEClass.getESuperTypes().add(thePartyPackage.getParty());
 
 		// Initialize classes, features, and operations; add parameters
-		initEClass(schoolEClass, School.class, "School", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(schoolEClass, School.class, "School", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getSchool_Faculty(), thePartyPackage.getPerson(), null, "faculty", null, 0, -1, School.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSchool_Students(), thePartyPackage.getPerson(), null, "students", null, 0, -1, School.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
