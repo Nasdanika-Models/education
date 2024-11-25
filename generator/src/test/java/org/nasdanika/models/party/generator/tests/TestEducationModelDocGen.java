@@ -22,11 +22,11 @@ import org.nasdanika.common.MutableContext;
 import org.nasdanika.common.NullProgressMonitor;
 import org.nasdanika.common.ProgressMonitor;
 import org.nasdanika.html.bootstrap.Theme;
-import org.nasdanika.html.model.app.Action;
-import org.nasdanika.html.model.app.gen.AppSiteGenerator;
+import org.nasdanika.models.app.Action;
+import org.nasdanika.models.app.gen.AppSiteGenerator;
 import org.nasdanika.models.ecore.graph.processors.EcoreHtmlAppGenerator;
 import org.nasdanika.models.ecore.graph.processors.EcoreNodeProcessorFactory;
-import org.nasdanika.models.education.processors.EcoreGenPartyProcessorsFactory;
+import org.nasdanika.models.education.processors.EcoreGenEducationProcessorsFactory;
 import org.nasdanika.models.party.PartyPackage;
 import org.nasdanika.ncore.NcorePackage;
 
@@ -43,7 +43,7 @@ public class TestEducationModelDocGen {
 		MutableContext context = Context.EMPTY_CONTEXT.fork();
 		Consumer<Diagnostic> diagnosticConsumer = d -> d.dump(System.out, 0);
 		List<Function<URI,Action>> actionProviders = new ArrayList<>();		
-		EcoreGenPartyProcessorsFactory ecoreGenPartyProcessorFactory = new EcoreGenPartyProcessorsFactory(context);		
+		EcoreGenEducationProcessorsFactory ecoreGenPartyProcessorFactory = new EcoreGenEducationProcessorsFactory(context);		
 		EcoreNodeProcessorFactory ecoreNodeProcessorFactory = new EcoreNodeProcessorFactory(
 				context, 
 				(uri, pm) -> {
