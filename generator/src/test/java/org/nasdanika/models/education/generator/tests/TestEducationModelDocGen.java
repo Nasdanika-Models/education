@@ -1,4 +1,4 @@
-package org.nasdanika.models.party.generator.tests;
+package org.nasdanika.models.education.generator.tests;
 
 import java.io.File;
 import java.io.IOException;
@@ -26,6 +26,7 @@ import org.nasdanika.models.app.Action;
 import org.nasdanika.models.app.gen.AppSiteGenerator;
 import org.nasdanika.models.ecore.graph.processors.EcoreHtmlAppGenerator;
 import org.nasdanika.models.ecore.graph.processors.EcoreNodeProcessorFactory;
+import org.nasdanika.models.education.EducationPackage;
 import org.nasdanika.models.education.processors.EcoreGenEducationProcessorsFactory;
 import org.nasdanika.models.party.PartyPackage;
 import org.nasdanika.ncore.NcorePackage;
@@ -38,7 +39,7 @@ import org.nasdanika.ncore.NcorePackage;
 public class TestEducationModelDocGen {
 	
 	@Test
-	public void testGeneratePartyModelDoc() throws IOException, DiagnosticException {
+	public void testGenerateEducationModelDoc() throws IOException, DiagnosticException {
 		ProgressMonitor progressMonitor = new NullProgressMonitor(); // new PrintStreamProgressMonitor();
 		MutableContext context = Context.EMPTY_CONTEXT.fork();
 		Consumer<Diagnostic> diagnosticConsumer = d -> d.dump(System.out, 0);
@@ -60,16 +61,17 @@ public class TestEducationModelDocGen {
 		
 		File actionModelsDir = new File("target\\action-models\\");
 		actionModelsDir.mkdirs();
-		File output = new File(actionModelsDir, "party.xmi");
+		File output = new File(actionModelsDir, "education.xmi");
 		
 		
 		Map<EPackage, URI> packageURIMap = Map.ofEntries(
 				Map.entry(EcorePackage.eINSTANCE, URI.createURI("https://ecore.models.nasdanika.org/")),	
-				Map.entry(NcorePackage.eINSTANCE, URI.createURI("https://ncore.models.nasdanika.org/"))	
+				Map.entry(NcorePackage.eINSTANCE, URI.createURI("https://ncore.models.nasdanika.org/")),	
+				Map.entry(PartyPackage.eINSTANCE, URI.createURI("https://party.models.nasdanika.org/"))	
 			);
 			
 		EcoreHtmlAppGenerator eCoreHtmlAppGenerator = new EcoreHtmlAppGenerator(
-				PartyPackage.eINSTANCE, 
+				EducationPackage.eINSTANCE, 
 				packageURIMap, 
 				ecoreNodeProcessorFactory);
 		
@@ -78,7 +80,7 @@ public class TestEducationModelDocGen {
 		String rootActionResource = "actions.yml";
 		URI rootActionURI = URI.createFileURI(new File(rootActionResource).getAbsolutePath());//.appendFragment("/");
 		
-		String siteMapDomain = "https://party.models.nasdanika.org";		
+		String siteMapDomain = "https://education.models.nasdanika.org";		
 		AppSiteGenerator actionSiteGenerator = new AppSiteGenerator() {
 			
 			protected boolean isDeleteOutputPath(String path) {

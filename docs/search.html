@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <title>Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" id="nsd-bootstrap-theme-stylesheet"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Nasdanika-Models/html-app@master/gen/web-resources/css/app.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jstree@3.3.16/dist/themes/default/style.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.5.0/github-markdown.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/default.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.23.0/dist/bootstrap-vue.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/html-app@master/gen/web-resources/js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/html-app@master/gen/web-resources/js/dark-head.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jstree@3.3.16/dist/jstree.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.23.0/dist/bootstrap-vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/html-app@master/gen/web-resources/js/components/table.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/components/table.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9BRJVLK8CC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9BRJVLK8CC');
+</script>    
+</head>
+  <body>
+    <div class="container-fluid nsd-app-container">
+      <div class="row">
+        <div class="col nsd-app-header">
+          <a href="https://github.com/Nasdanika-Models" data-nsd-label-uuid="f6bf203a-afd2-4a1d-ba20-e9f9511b9152" class="nsd-app-header-title">
+            <img src="https://docs.nasdanika.org/images/nasdanika-logo.png" class="nsd-app-label-icon"/>Nasdanika Models</a>
+          <ul class="nav nsd-app-header-navs">
+            <li class="nav-item"><span data-nsd-label-uuid="5cf98207-3eb2-4fa5-b34a-115b32f44ed5" class="navbar-text"><span class="fas fa-search nsd-app-label-icon"></span>Search</span>
+            </li>
+            <li class="nav-item">
+              <a href="glossary.html" data-nsd-label-uuid="92b28e48-df89-409a-81cf-1f99ec0f2d63" class="nav-link"><span class="fas fa-book nsd-app-label-icon"></span>Glossary</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col nsd-app-navbar">
+          <ul class="navbar navbar-light navbar-expand-lg">
+            <a href="index.html" data-nsd-label-uuid="42b24f18-20cd-45ab-8997-8a68e97efe99" class="navbar-brand">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif" class="nsd-app-label-icon"/>education</a>
+            <button type="button" data-toggle="collapse" data-target="#nsd_1r" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="nsd_1r" class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a href="classifiers.html" data-nsd-label-uuid="c43b9491-4969-4fb3-a61f-0829b4953d3b" class="nav-link">Classifiers</a>
+                </li>
+                <li class="nav-item">
+                  <a href="diagram.html" data-nsd-label-uuid="52252d4a-4a02-4665-a9bb-cb54a8e30db0" class="nav-link"><span class="fas fa-project-diagram nsd-app-label-icon"></span>Diagram</a>
+                </li>
+                <li class="nav-item">
+                  <li data-nsd-label-uuid="9e1c7c9b-276f-4a21-b869-df281b9f2d8a" class="dropdown">
+                    <a role="button" data-toggle="dropdown" class="nav-link dropdown-toggle">
+                      <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png" class="nsd-app-label-icon"/>Graphs</a>
+                    <div class="dropdown-menu">
+                      <a href="default-graph.html" data-nsd-label-uuid="254e3a6e-7a52-4606-ba35-c45e3a562259" class="dropdown-item">Default Graph</a>
+                      <a href="circular-layout-graph.html" data-nsd-label-uuid="d4345ef9-e957-4851-9eee-9c17a3818095" class="dropdown-item">Circular Graph</a>
+                      <a href="force-layout-graph.html" data-nsd-label-uuid="020891e7-6811-43d9-ba97-9bc8a4ad5869" class="dropdown-item">Force Graph</a>
+                      <div title="With dependencies and sub-packages" class="dropdown-divider"></div>
+                      <a href="default-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="a820e380-ad9d-4d7e-8c21-b48f5b559270" class="dropdown-item">Default Graph</a>
+                      <a href="circular-layout-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="4d770ab8-982e-4665-812b-4e7d63bc79a7" class="dropdown-item">Circular Graph</a>
+                      <a href="force-layout-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="fc04d752-7a10-4ff2-a2bd-f662273d04b8" class="dropdown-item">Force Graph</a>
+                    </div>
+                  </li>
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="row nsd-app-content-row">
+        <div class="col nsd-app-navigation-panel">
+          <div class="list-group list-group-flush">
+            <a href="references/eClassifiers/School/index.html" data-nsd-label-uuid="4e9d23fd-20b7-4586-bfdb-78a309bb7aae" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>School</a>
+          </div>
+        </div>
+        <div data-nsd-label-uuid="5cf98207-3eb2-4fa5-b34a-115b32f44ed5" data-nsd-action-uris="uuid:5cf98207-3eb2-4fa5-b34a-115b32f44ed5" class="col nsd-app-content-panel">
+          <div class="container-fluid">
+            <div class="row nsd-app-content-panel-title-and-items-row">
+              <div class="col-auto">
+                <H1><span data-nsd-label-uuid="5cf98207-3eb2-4fa5-b34a-115b32f44ed5" class="nsd-app-content-panel-title"><span class="fas fa-search nsd-app-label-icon"></span>Search</span>
+                </H1>
+              </div>
+            </div>
+            <div class="row nsd-app-content-panel-content-row">
+              <div class="col">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col">		<script src="https://cdn.jsdelivr.net/gh/olivernn/lunr.js@v2.3.9/lunr.js"></script>     
+		<script src="search-documents.js"></script>     
+     	<div id="search-app" class="container-fluid">
+     		<div class="row">
+     			<div class="col">
+					<b-form-group
+			          label="Filter"
+			          label-for="filter-input"
+			          label-cols-sm="3"
+			          label-align-sm="right"
+			          label-size="sm"
+			          class="mb-0"
+					  description="You can use wildcards, e.g. 'foo*' or 'f*o'; title or content fields, e.g. 'title:foo* bar'; boosts, e.g. 'foo^10 bar'; fuzzy matches, e.g. 'foo~1'; and term presence, e.g. '+foo bar -baz'"	          
+			        >
+			          <b-input-group size="sm">
+			            <b-form-input
+			              id="filter-input"
+			              v-model="filter"
+			              type="search"
+			              placeholder="Type to Search"
+			              debounce="700"
+			            ></b-form-input>
+			
+			            <b-input-group-append>
+			              <b-button :disabled="!filter" @click="filter = ''">Clear</b-button>
+			            </b-input-group-append>
+			          </b-input-group>
+			        </b-form-group>		
+     			</div>     		
+     		</div>
+	        
+	        <div class="row flex-nowrap">
+	        	<div class="col-auto border-right border-secondary pb-1">
+	        		<div id="nsd-site-map-tree">
+	        		</div>
+	        	</div>
+	        	<div class="col">
+			        <b-card 
+			        	v-for="searchResult in searchResults" 
+			        	:header-html="searchResult.title" 
+			        	:footer="searchResult.path"
+			        	class="my-1"
+			        	>
+			        	
+			        	<b-card-text><span v-html="searchResult.content"></span></b-card-text>
+			        </b-card>
+	        	</div>
+	        </div>	        
+     	</div>
+     
+		<script>		      
+			new Vue({
+				  el: '#search-app',
+				  data: {
+			        	filter: null,
+				      searchIndex : lunr(function () {
+						  this.ref('url');
+						  this.field('title');
+						  this.field('content');
+						  this.metadataWhitelist = ['position'];
+	
+						  for (const key in searchDocuments) {
+							  let doc = searchDocuments[key];
+							this.add({
+								url: key,
+								title: doc.title,
+								path: doc.path,
+								content: doc.content
+							});  
+						  }
+						})
+				  },				  
+				  computed: {
+					searchResults: function() {
+						if (this.filter) {
+							let searchResult = this.searchIndex.search(this.filter);
+							let actionUuids = searchResult.map(match => searchDocuments[match.ref]['action-uuid']).join(" ");
+							setTimeout(() => {
+								let treeSearchCallback = $('#nsd-site-map-tree').jstree(true).search;
+								if (treeSearchCallback) {
+									$('#nsd-site-map-tree').jstree(true).search(actionUuids);								
+								}
+							});
+							
+							return searchResult.map(function(e) {
+								let doc = searchDocuments[e.ref];
+								let titleMatches = [];
+								let contentMatches = [];
+								let matchMetaData = e.matchData.metadata;
+								for (const term in matchMetaData) {
+									if (matchMetaData[term]['title']) {
+										let positions = matchMetaData[term]['title'].position;
+										for (const match in positions) {
+											titleMatches.push(positions[match]);
+										}										
+									}
+									if (matchMetaData[term]['content']) {
+										let positions = matchMetaData[term]['content'].position;
+										for (const match in positions) {
+											contentMatches.push(positions[match]);
+										}										
+									}
+								}
+								
+								// Title highlighting
+								titleMatches.sort(function (a, b) { return a[0] - b[0] });
+								let titleElements = [];
+								let idx = 0;
+								for (const matchIdx in titleMatches) {
+									let match = titleMatches[matchIdx];
+									if (match[0] > idx) {
+										titleElements.push(doc.title.substring(idx, match[0]));
+									}
+									idx =  match[0] + match[1];
+									titleElements.push(`<span class='nsd-mark'>${doc.title.substring(match[0], idx)}</span>`);
+								}
+								if (idx < doc.title.length - 1) {
+									titleElements.push(doc.title.substring(idx, doc.title.length));
+								}
+								
+								// Content ellipsing and highlighting
+								contentMatches.sort(function (a, b) { return a[0] - b[0] });
+								let contentElements = [];
+								let snippetLength = 10;
+								idx = 0;
+								for (const matchIdx in contentMatches) {
+									let match = contentMatches[matchIdx];
+									if (match[0] > idx) {
+										let words = doc.content.substring(idx, match[0]).split(' ');
+										let snippetedWords = [];
+										if (idx == 0) {
+											if (words.length <= snippetLength) {
+												snippetedWords = words;
+											} else {
+												snippetedWords.push("&hellip;");
+												words.slice(words.length - snippetLength, words.length).forEach(e => snippetedWords.push(e));
+											}
+										} else {
+											if (words.length <= snippetLength * 2) {
+												snippetedWords = words;
+											} else {
+												words.slice(0, snippetLength).forEach(e => snippetedWords.push(e));
+												snippetedWords.push("&hellip;");
+												words.slice(words.length - snippetLength, words.length).forEach(e => snippetedWords.push(e));
+											}
+											
+										}
+										contentElements.push(snippetedWords.join(' '));
+									}
+									idx =  match[0] + match[1];
+									contentElements.push(`<span class='nsd-mark'>${doc.content.substring(match[0], idx)}</span>`);
+								}
+								if (idx < doc.content.length - 1) {
+									let words = doc.content.substring(idx, doc.content.length).split(' ');
+									if (idx == 0) {
+										if (words.length < snippetLength * 2) {
+											contentElements.push(doc.content);
+										} else {
+											let snippetedWords = [];
+											words.slice(0, snippetLength * 2).forEach(e => snippetedWords.push(e));
+											snippetedWords.push("&hellip;");
+											contentElements.push(snippetedWords.join(' '));
+										}
+									} else {
+										let snippetedWords = [];
+										if (words.length <= snippetLength) {
+											snippetedWords = words;
+										} else {
+											words.slice(0, snippetLength).forEach(e => snippetedWords.push(e));
+											snippetedWords.push("&hellip;");
+										}
+										contentElements.push(snippetedWords.join(' '));
+									}
+								}
+								return {
+									title: `<h5><a href="${e.ref}">${titleElements.join('')}</a></h5>`,
+									path: doc.path,
+									content: contentElements.join('')
+								};									
+							});
+						} 
+						setTimeout(() => {
+							let treeSearchCallback = $('#nsd-site-map-tree').jstree(true).search;
+							if (treeSearchCallback) {
+								$('#nsd-site-map-tree').jstree(true).search('');								
+							}
+						});
+						return [];
+					}  
+				  }
+			});   			
+		</script>
+		
+
+<script>$(document).ready( function() {
+$('#nsd-site-map-tree').jstree(function(tree) { tree.state.filter = function(state) { delete state.core.selected; return state; }; tree.search.search_callback = (results, node) => results.split(' ').includes(node.original['data-nsd-label-uuid']); return tree; }({"core":{"data":[{"a_attr":{"onclick":"window.location='https://github.com/Nasdanika-Models';"},"children":[{"children":[{"data-nsd-label-uuid":"5cf98207-3eb2-4fa5-b34a-115b32f44ed5","icon":"fas fa-search","id":"47befd50-435c-4641-9f23-915535986af1","text":"Search","type":"leaf"},{"a_attr":{"onclick":"window.location='glossary.html';"},"data-nsd-label-uuid":"92b28e48-df89-409a-81cf-1f99ec0f2d63","icon":"fas fa-book","id":"5644bd2d-e69f-4c7d-bda0-0a170deeec99","text":"Glossary","type":"leaf"}],"text":"Children"},{"children":[{"a_attr":{"onclick":"window.location='https://github.com/Nasdanika-Models/education';"},"data-nsd-label-uuid":"a91327c7-a600-44b9-aee6-8568897fde06","icon":"fab fa-github","id":"48afc2b7-764d-4b5c-b518-6c0ac4beb2b1","text":"Sources","type":"leaf"}],"text":"Navigation"}],"data-nsd-label-uuid":"f6bf203a-afd2-4a1d-ba20-e9f9511b9152","icon":"https://docs.nasdanika.org/images/nasdanika-logo.png","id":"56afe99f-fc4e-4954-a733-f4d7bc6d23c3","text":"Nasdanika Models","type":"leaf"},{"a_attr":{"onclick":"window.location='index.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/School/index.html';"},"data-nsd-label-uuid":"4e9d23fd-20b7-4586-bfdb-78a309bb7aae","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"ce30c295-c020-4336-90a8-069a3d3ad821","text":"School","type":"leaf"}],"text":"E classifiers"}],"data-nsd-label-uuid":"42b24f18-20cd-45ab-8997-8a68e97efe99","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EPackage.gif","id":"56cd16bb-9b9e-4186-8851-2886c476fe2d","text":"education","type":"leaf"},{"children":[{"data-nsd-label-uuid":"2ff355e4-15ad-4484-b0e6-86922d2fc78c","icon":"far fa-question-circle","id":"b79d792d-4669-49b0-966d-b5848a7d748b","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/School/attributes.html';"},"data-nsd-label-uuid":"3d6df8f9-6b66-46b4-b961-7b27435eb470","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EAttribute.gif","id":"9bfe9c88-c6bd-4352-a312-cd99e5bf319a","text":"Attributes","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/School/inheritance.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/School/inheritance.html#uuid-cc863919-ebd8-43e0-ac7b-da3e49b010e7';"},"data-nsd-label-uuid":"cc863919-ebd8-43e0-ac7b-da3e49b010e7","id":"d687f780-ce69-43a2-ac57-322ae7d20f1d","text":"Supertypes","type":"leaf"}],"text":"Sections"}],"data-nsd-label-uuid":"1d368d11-3c5d-450f-a85d-ad0ce60239fa","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EGenericSuperType.gif","id":"e1d67107-4483-41a1-a77c-52f82f6335cd","text":"Inheritance","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/School/references.html';"},"data-nsd-label-uuid":"329b2154-e708-4043-8fc2-bb3319558836","icon":"https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EReference.gif","id":"708d2916-4a25-4991-b817-893f869f8457","text":"References","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/School/diagram.html';"},"data-nsd-label-uuid":"6d7a92c0-4be9-4606-b9c6-56eda3ca296d","icon":"fas fa-project-diagram","id":"b135d03f-f1a2-41b3-b451-e9ec8e17d63d","text":"Diagram","type":"leaf"},{"children":[{"children":[{"a_attr":{"onclick":"window.location='references/eClassifiers/School/default-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"af950d53-e19d-425f-a344-17142af8c219","icon":"far fa-question-circle","id":"7787372c-6a59-4e91-9260-009c11368e21","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"e506ac33-0777-42ce-b6f1-40ae305f84e3","id":"08835e0f-df9c-4840-aae6-008478cf04a7","text":"Default Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/School/circular-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"07eb5285-1f69-4f74-bcd6-0dc1e10df9e5","icon":"far fa-question-circle","id":"b3f469b7-9b59-46ef-9bb7-31b8ce5a9de7","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"1e571b97-854c-4c76-932f-90d3baeb0c66","id":"89709e70-4414-4c7e-8c76-17ac04b9fc11","text":"Circular Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/School/force-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"c4c119f0-3fc2-414e-8794-f62216daf01d","icon":"far fa-question-circle","id":"4bfa646b-329e-46bb-aae2-401b08ca9b46","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"2e0760a2-7d0a-444c-a6fb-d5dcec7aedbf","id":"4e821b3e-1fbe-425e-9e01-dacfbe0032c7","text":"Force Graph","type":"leaf"}],"text":"Children"},{"children":[{"data-nsd-label-uuid":"0b07041f-5b08-491d-8c9d-5817af9ee0fa","icon":"far fa-question-circle","id":"nsd_k","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"57f59e5f-fc7d-466b-84ac-dee0df984289","icon":"https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png","id":"f541ae66-020e-4f4f-9802-19b94899fa8d","text":"Graphs","type":"leaf"},{"a_attr":{"onclick":"window.location='references/eClassifiers/School/load-specification.html';"},"data-nsd-label-uuid":"baa5851b-877e-4228-84c5-b6d145bc588e","id":"1631aa34-5b39-4916-ada2-329c82fde644","text":"Load specification","type":"leaf"}],"text":"Navigation"},{"children":[{"data-nsd-label-uuid":"be98b02d-9a06-4b9a-9316-731eaf47795f","icon":"far fa-question-circle","id":"b1f44103-5663-48c8-84e3-3be04755687f","text":"(blank)","type":"leaf"}],"text":"Decorator"},{"children":[{"a_attr":{"onclick":"window.location='classifiers.html';"},"data-nsd-label-uuid":"c43b9491-4969-4fb3-a61f-0829b4953d3b","id":"939857d2-ba28-4d64-a3b0-d830371bc84c","text":"Classifiers","type":"leaf"},{"a_attr":{"onclick":"window.location='diagram.html';"},"children":[{"children":[{"data-nsd-label-uuid":"7e3ad457-aa02-4b0a-94a0-099ab0afedf6","icon":"far fa-question-circle","id":"0dea8449-1a27-463c-8115-411a6d0b877e","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"52252d4a-4a02-4665-a9bb-cb54a8e30db0","icon":"fas fa-project-diagram","id":"52142ec1-124e-4205-9458-e055f0d16f00","text":"Diagram","type":"leaf"},{"children":[{"children":[{"a_attr":{"onclick":"window.location='default-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"ad155c79-4089-4b6f-be3a-059963a0b447","icon":"far fa-question-circle","id":"40e1fb2d-085f-421f-ab52-706bb6c0a927","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"254e3a6e-7a52-4606-ba35-c45e3a562259","id":"62a9cdbd-853a-45b0-84c0-9e5ef3d6efdc","text":"Default Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='circular-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"770ac607-a7ee-45ab-9e79-bbe0ce5417d8","icon":"far fa-question-circle","id":"4b4bbc17-14f6-43dd-9f85-8cc7c1c2a78e","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"d4345ef9-e957-4851-9eee-9c17a3818095","id":"0b5ab2bb-3160-4f67-b72d-dee8b18d0b08","text":"Circular Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='force-layout-graph.html';"},"children":[{"children":[{"data-nsd-label-uuid":"6eceac4a-803f-4e38-9c79-04f19b36aed9","icon":"far fa-question-circle","id":"a944a836-f9f0-48e9-a961-e87f04758bdd","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"020891e7-6811-43d9-ba97-9bc8a4ad5869","id":"9eefd91a-3e0b-44d8-82ca-5225a232bac3","text":"Force Graph","type":"leaf"},{"data-nsd-label-uuid":"5177192e-48ef-45fc-9caa-c5847755a886","id":"nsd_x","text":"(blank)","type":"leaf"},{"a_attr":{"onclick":"window.location='default-graph-with-dependencies-and-subpackages.html';"},"children":[{"children":[{"data-nsd-label-uuid":"2c637806-5090-4c33-8e2b-a653f4863dc5","icon":"far fa-question-circle","id":"754aad4e-870e-458b-90df-a06a9f3033ee","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"a820e380-ad9d-4d7e-8c21-b48f5b559270","id":"236b0212-7aba-449d-8270-d16c109f20e1","text":"Default Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='circular-layout-graph-with-dependencies-and-subpackages.html';"},"children":[{"children":[{"data-nsd-label-uuid":"652fc5ba-2650-45a4-a967-6de1e411a358","icon":"far fa-question-circle","id":"32a9a8a6-24bf-470b-a725-793fafa6940b","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"4d770ab8-982e-4665-812b-4e7d63bc79a7","id":"611663af-d133-4c4b-b338-5a6ff1627b6e","text":"Circular Graph","type":"leaf"},{"a_attr":{"onclick":"window.location='force-layout-graph-with-dependencies-and-subpackages.html';"},"children":[{"children":[{"data-nsd-label-uuid":"681e52d1-0daa-4b4d-bc11-f772c34d2ef6","icon":"far fa-question-circle","id":"19bcffd8-3781-4a5b-acab-22700cfb4700","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"fc04d752-7a10-4ff2-a2bd-f662273d04b8","id":"192feae0-8b15-445a-88c8-4d70795c52b1","text":"Force Graph","type":"leaf"}],"text":"Children"},{"children":[{"data-nsd-label-uuid":"49473b6f-3843-4261-843c-b88bedcc7df9","icon":"far fa-question-circle","id":"nsd_14","text":"(blank)","type":"leaf"}],"text":"Decorator"}],"data-nsd-label-uuid":"9e1c7c9b-276f-4a21-b869-df281b9f2d8a","icon":"https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png","id":"9a388bc1-4e8b-439d-90a4-27e2d86369e8","text":"Graphs","type":"leaf"}],"text":"Navigation"}]},"search":{"show_only_matches":true},"plugins":["state","search"],"state":{"key":"nsd-site-map-tree"}}));
+});</script>
+				
+		</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col nsd-app-footer">
+          <ul class="nav nsd-app-footer-navs">
+            <li class="nav-item">
+              <a href="https://github.com/Nasdanika-Models/education" data-nsd-label-uuid="a91327c7-a600-44b9-aee6-8568897fde06" class="nav-link"><span class="fab fa-github nsd-app-label-icon"></span>Sources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
