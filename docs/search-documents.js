@@ -1,1 +1,1 @@
-var searchDocuments = {"references/eClassifiers/School/inheritance.html":{"path":"School/Inheritance","link-uuid":"c9d7970d-fd07-43b5-8ce0-82cdd1971270","title":"Inheritance","content":"Supertypes "}}
+var searchDocuments = {"references/eClassifiers/School/inheritance.html":{"path":"School/Inheritance","link-uuid":"27f019a2-7145-4315-9110-a0ac3cbe5b00","title":"Inheritance","content":"Supertypes "}}
