@@ -1,23 +1,23 @@
 {
   "references/eClassifiers/School/inheritance.html": {
     "path": "School/Inheritance",
-    "link-uuid": "5d49e683-e41b-4a0f-8499-614b36e0481f",
+    "link-uuid": "68b2770e-616f-4c37-a012-f61b79b325b7",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1747881720993
+    "timestamp": 1750074645557
   },
   "references/eClassifiers/School/references/eStructuralFeatures/faculty/index.html": {
     "path": "School/References/faculty",
-    "link-uuid": "0030b713-8124-492d-b742-b322179a9857",
+    "link-uuid": "d5ad0261-c29c-4711-b5a9-078d29c577a0",
     "title": "faculty",
     "content": "Type Person Multiplicity 0..*",
-    "timestamp": 1747881720996
+    "timestamp": 1750074645561
   },
   "references/eClassifiers/School/references/eStructuralFeatures/students/index.html": {
     "path": "School/References/students",
-    "link-uuid": "0e32db33-e0da-4248-82b2-87aeccb2b6ad",
+    "link-uuid": "c1ce46d5-6e63-4922-8497-e0444eb652e8",
     "title": "students",
     "content": "Type Person Multiplicity 0..*",
-    "timestamp": 1747881720997
+    "timestamp": 1750074645562
   }
 }
